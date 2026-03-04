@@ -23,7 +23,7 @@ export default function WeddingPage() {
           </div>
 
           <h1 className="mt-5 mb-2.5 text-4xl leading-snug max-sm:text-3xl">
-            {"강아지 \uD83D\uDC36 & 고양이 \uD83D\uDC31의 결혼식"}
+            {"강아지 🐶 & 고양이 🐱의 결혼"}
           </h1>
 
           <p className="mb-1 text-[22px]">
