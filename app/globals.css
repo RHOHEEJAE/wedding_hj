@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #fdf6f0;
+  --card-bg: #ffffff;
+  --accent: #ff8a80;
+  --accent-soft: #ffe4e1;
+  --text-main: #333333;
+  --text-sub: #777777;
+
+  --background: #fdf6f0;
+  --foreground: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #ffe4e1, #fdf6f0 40%, #fff);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  8% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
