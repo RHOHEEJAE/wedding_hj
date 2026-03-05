@@ -1,5 +1,6 @@
 import PhotoSlideshow from "@/components/photo-slideshow";
 import MusicPlayer from "@/components/music-player";
+import GuestComments from "@/components/guest-comments";
 
 export default function WeddingPage() {
   return (
@@ -113,6 +114,9 @@ export default function WeddingPage() {
             {"음악이 나와요~!"}
           </p>
         </section>
+
+        {/* Guest Comments */}
+        <GuestComments />
 
         {/* Footer - Account */}
         <footer
