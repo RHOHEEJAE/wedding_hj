@@ -120,16 +120,46 @@ export default function WeddingPage() {
 
         {/* Footer - Account */}
         <footer
-          className="col-span-full border-t border-pink-200/35 px-7 py-5 text-center"
+          className="col-span-full border-t border-pink-200/35 px-7 py-6 text-center"
           style={{
             background: "linear-gradient(180deg, rgba(255,248,248,0.6), #fff)",
           }}
         >
-          <div className="mb-1.5 text-[15px] tracking-wider text-[var(--text-sub)]">
+          <div className="mb-3 text-[15px] tracking-wider text-[var(--text-sub)]">
             마음 전하실 곳
           </div>
-          <div className="text-[22px] tracking-wide text-[var(--text-main)]">
-            신한 123-456-789-11
+
+          {/* 카카오페이 송금 버튼 */}
+          <div className="mb-4 flex justify-center gap-3">
+            <a
+              href="https://qr.kakaopay.com/FdKOkBYw1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[15px] font-semibold text-[#3A1D1D] transition-opacity hover:opacity-80"
+              style={{ background: "#FEE500", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3C7.037 3 3 6.358 3 10.5c0 2.682 1.67 5.03 4.2 6.4l-1.07 3.97a.3.3 0 0 0 .46.32L11.1 18.7c.296.028.597.043.9.043 4.963 0 9-3.358 9-7.5S16.963 3 12 3z" fill="#3A1D1D"/>
+              </svg>
+              신랑 카카오페이
+            </a>
+            <a
+              href="https://qr.kakaopay.com/FdKOkBYw1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[15px] font-semibold text-[#3A1D1D] transition-opacity hover:opacity-80"
+              style={{ background: "#FEE500", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3C7.037 3 3 6.358 3 10.5c0 2.682 1.67 5.03 4.2 6.4l-1.07 3.97a.3.3 0 0 0 .46.32L11.1 18.7c.296.028.597.043.9.043 4.963 0 9-3.358 9-7.5S16.963 3 12 3z" fill="#3A1D1D"/>
+              </svg>
+              신부 카카오페이
+            </a>
+          </div>
+
+          {/* 계좌번호 */}
+          <div className="text-[17px] tracking-wide text-[var(--text-main)]">
+            카카오페이증권 020-07-237632
           </div>
         </footer>
       </main>
