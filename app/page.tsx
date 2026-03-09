@@ -1,6 +1,8 @@
+import dynamic from "next/dynamic";
 import PhotoSlideshow from "@/components/photo-slideshow";
 import MusicPlayer from "@/components/music-player";
-import GuestComments from "@/components/guest-comments";
+
+const GuestComments = dynamic(() => import("@/components/guest-comments"), { ssr: false });
 
 export default function WeddingPage() {
   return (
