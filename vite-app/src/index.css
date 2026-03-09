@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 4 100% 75%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 350 100% 94%;
+    --secondary-foreground: 4 100% 75%;
+    --muted: 350 33% 96%;
+    --muted-foreground: 0 0% 47%;
+    --accent: 4 100% 75%;
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 84% 60%;
+    --border: 350 50% 90%;
+    --input: 350 50% 90%;
+    --ring: 4 100% 75%;
+    --radius: 0.75rem;
+
+    /* 청첩장 커스텀 */
+    --bg-color: #fdf6f0;
+    --card-bg: #ffffff;
+    --accent: #ff8a80;
+    --accent-soft: #ffe4e1;
+    --text-main: #333333;
+    --text-sub: #777777;
+    --sat: env(safe-area-inset-top);
+    --sar: env(safe-area-inset-right);
+    --sab: env(safe-area-inset-bottom);
+    --sal: env(safe-area-inset-left);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+  background: radial-gradient(circle at top, #ffe4e1, #fdf6f0 40%, #fff);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: var(--sat) var(--sar) var(--sab) var(--sal);
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  min-width: 0;
+  width: 100%;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  8% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
