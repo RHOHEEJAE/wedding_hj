@@ -4,8 +4,8 @@ import GuestCommentsClient from "@/components/guest-comments-client";
 
 export default function WeddingPage() {
   return (
-    <div className="flex min-h-screen min-h-[100dvh] items-start md:items-center justify-center p-4 sm:p-6">
-      <main className="grid w-full max-w-[880px] overflow-hidden rounded-3xl bg-[var(--card-bg)] shadow-[0_18px_45px_rgba(0,0,0,0.08)] md:grid-cols-[1.1fr_1.2fr]"
+    <div className="flex min-h-screen min-h-[100dvh] w-full min-w-0 max-w-[100vw] items-start justify-center overflow-x-hidden p-4 md:items-center sm:p-6">
+      <main className="grid w-full min-w-0 max-w-[880px] overflow-hidden rounded-3xl bg-[var(--card-bg)] shadow-[0_18px_45px_rgba(0,0,0,0.08)] md:grid-cols-[1.1fr_1.2fr]"
         style={{ fontFamily: "'Nanum Pen Script', var(--font-nanum-pen), cursive" }}
       >
         {/* Left Section */}

@@ -1,10 +1,20 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  // 페이지 진입 시 자동 재생 시도 (일부 브라우저/모바일은 정책상 막힐 수 있음)
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    const play = () => {
+      audio.play().then(() => setIsPlaying(true)).catch(() => {});
+    };
+    play();
+  }, []);
 
   const toggleMusic = async () => {
     const audio = audioRef.current;
